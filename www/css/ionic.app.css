@@ -9088,3 +9088,8 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.choice {
+  font-size: 2em;
+  font-weight: bold;
+  color: red; }
