@@ -1,25 +1,52 @@
 <ion-view view-title="Game">
-  <ion-content padding="true">
-    <div class="choice bef">
-      {{beforeChoiceOne}}
-    </div>
-    <div class="choice bef">
-      {{beforeChoiceTwo}}
-    </div>
-    <div class="choice bef">
-      {{beforeChoiceThree}}
-    </div>
-    <div class="middle-number">
-      {{middleNumber}}
-    </div>
-    <div class="choice aft">
-      {{afterChoiceOne}}
-    </div>
-    <div class="choice aft">
-      {{afterChoiceTwo}}
-    </div>
-    <div class="choice aft">
-      {{afterChoiceThree}}
-    </div>
+  <ion-content padding="true" has-header="true" overflow-scroll="true">
+    <div class="row body">
+      <div class="col-25 left-side">
+        <div class="row before" >
+          <div class="choice" ng-click="beforeSelected({{beforeChoiceOne}})">
+            {{beforeChoiceOne}}
+          </div>
+        </div>
+        <div class="row before">
+          <div class="choice" ng-click="beforeSelected({{beforeChoiceTwo}})">
+            {{beforeChoiceTwo}}
+          </div>
+        </div>
+        <div class="row before">
+          <div class="choice" ng-click="beforeSelected({{beforeChoiceThree}})">
+            {{beforeChoiceThree}}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-50 middle">
+        <div class="row">
+        </div>
+        <div class="row">
+          <div class="middle-number">
+            {{middleNumber}}
+          </div>
+        </div>
+        <div class="row">
+        </div>
+      </div>
+      <div class="col-25 right-side">
+        <div class="row after">
+          <div class="choice" ng-click="afterSelected({{afterChoiceOne}})">
+            {{afterChoiceOne}}
+          </div>
+        </div>
+        <div class="row after">
+          <div class="choice" ng-click="afterSelected({{afterChoiceTwo}})">
+            {{afterChoiceTwo}}
+          </div>
+        </div>
+        <div class="row after">
+          <div class="choice" ng-click="afterSelected({{afterChoiceThree}})">
+            {{afterChoiceThree}}
+          </div>
+        </div>
+      </div>
+    </div
   </ion-content>
 </ion-view>
